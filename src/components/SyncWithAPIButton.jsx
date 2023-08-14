@@ -1,9 +1,12 @@
 
 import { useState } from "react";
 
+//this url is temporal, it should be in enviromental variable
 let url = "https://randomuser.me/api/?results=1000";
 
 const SyncWithAPIButton = ({setContactList}) => {
+
+  //this component connects to the API and then save the contact list in the prop "contactList" which comes from APP->Header
 
     let [isSyncing, setIsSyncing] = useState(false)
 

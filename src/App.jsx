@@ -5,6 +5,7 @@ import ShowTenContacts from "./components/ShowTenContacts";
 
 function App() {
 
+  //The url is here just for educational purposes (it should be in an enviromental variable)
   let url = "https://randomuser.me/api/?results=1000";
 
   let [contactList, setContactList] = useState( JSON.parse(localStorage.getItem("contactList")) ?? []);
